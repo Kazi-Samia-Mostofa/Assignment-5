@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 05</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+     
+      body{
+         background-color: rgb(241, 245, 249);
+         padding:0px;
+         margin:0px;
+      }
+      #long{
+        border-radius: 12px;
+        background: linear-gradient(130.70deg, rgb(55, 82, 253) 0.419%,rgb(108, 127, 250) 52.66%,rgb(155, 168, 248) 99.733%);
+      }
+      #side{
+        height: 608px;
+      }
+      .poppins {
+       font-family: "Poppins", sans-serif; 
+      }
+
+      .time-tag{
+        background-color: rgb(241, 245, 249);
+        height: 55px;
+        width: 245px;
+        margin-left: 7px ;
+        margin-right: 6px;
+        font-size: 15px;
+        font-weight:500;
+        margin-top: 12px;
+        border-radius: 18px;
+        padding-top: 6px;
+        padding-left: 6px;
+        padding-right: 4px;
+      }
+
+    </style>
+  </head>
+  <body class="h-screen poppins">
+
+   <div class="pt-2">
+
+       <!-- NAVBAR -->
+    <div class="flex  items-center justify-between max-w-7xl mx-auto h-16 m-4 rounded-md bg-white">
+
+      <div class="flex justify-center gap-2 items-center pl-4 ">
+          <img class="h-9 w-9" src="logo.png" alt="">
+          <h2 class="text-2xl">Dev<span class="font-bold">Board</span></h2>          
+      </div>
+
+      <div class="flex justify-center items-center  pr-4 pl-12 gap-12">
+        <div class="flex justify-center items-center gap-3  h-10 w-20 bg-slate-100 rounded-2xl">
+          <img class="h-6 w-6" src="checkbox.png" alt="">
+          <h2 id="top" class="font-bold text-2xl">23</h2>
+        </div>
+        <div class="h-11 w-11 bg-slate-100 rounded-full flex justify-center items-center">
+          <img id="themeBtn" class="h-7 w-7" src="theme-btn.png" alt="">
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 2ND PART -->
+
+    <div class=" flex justify-center items-center">
+      <!-- BIG PART -->
+      <div class="max-w-7xl mx-auto pl-2 max-h-fit w-8/12 ml-32 bg-white pt-3 rounded-lg">
+
+        <!-- 1st -->
+        <div class="flex justify-between items-center ">
+          <div class="flex justify-center items-center gap-4 h-20 w-44 m-3 bg-slate-100 rounded-lg pt-2 pl-3">
+            <div class="h-9 w-9 flex justify-center items-center rounded-full bg-slate-50">
+              <img class="h-5 w-5" src="checkbox.png" alt="">
+            </div>
+            <div>
+            <h2 class="text-xs font-medium">Task Assigned</h2>
+            <h2 id="middle" class="font-bold">6
+            </h2>
+          </div>
+        </div>
+          
+
+        <!-- 2nd -->
+        
+        <div id="long" class="h-20 w-7/12 bg-slate-100 rounded-lg">
+          <div class="flex justify-self-start items-center rounded-lg" >
+            <div class="p-3">
+              <img class="h-14 w-14 border border-cyan-50 border-dashed items-center" src="board.png" alt="">
+            </div>
+            
+            <a href="index1.html"><div class="pt-2 font-medium text-base">
+              <button class="text-gray-100">Discover Something <br> New Today! </button>
+            </div></a>
+          </div>
+        </div>
+            
+          <!--3RD  -->
+        <div class="flex justify-center items-center bg-slate-100 h-20 w-44 gap-4 mr-6 rounded-lg">
+          <div class=" h-10 w-10 flex justify-center items-center rounded-full bg-white ">
+            <img class="h-5 w-5 " src="calender.png" alt="">
+          </div>
+          <div>
+            <h2 id="day">Sun,</h2>
+            <h2 id="time" class="font-bold">Feb 01 2025</h2>
+          </div>
+        </div>
+       </div>
+       <!-- <p class="text-slate-100 font-bold">-----------------------------------------------------------------------------------------------------------</p> -->
+
+        <!-- gRID -->
+
+       <div class=" h-fit mb-3 pb-3 flex justify-between items-center gap-3">
+
+        <!-- ONE -->
+         <div class="pl-3 w-1/3 ml-3 bg-slate-100 rounded-lg ">
+          <h2 class="bg-white h-8 w-24 p-1 pl-4 mt-4 pt-2 rounded-sm text-xs font-medium">ShopEase </h2>
+          <h2  class="text pt-4 pb-3 font-semibold mb-1 text-2xl">Fix Mobile Button Issue </h2>
+          <h2 class="h-12 w-64 text-xs text-gray-500 font-normal pl-4 pt-2 rounded-sm bg-white">Debug using Chrome DevTools,check <br>  for  overlapping... </h2>
+          <!-- BUTTON -->
+          <div class="flex justify-between items-center">
+            <div class="">
+              <h2 class="font-normal mt-2 text-xs text-gray-400 pt-2">Deadline</h2>
+              <h2 class="font-medium text-sm pb-2 ">21 March 2025</h2>
+            </div>
+            <div>
+              <button class="h-8 w-24 mr-13 mt-2 bg-[#3752FD] text-white text-xs rounded-sm font-semibold btn">Completed</button>
+            </div>        
+
+          </div>
+         </div>
+
+         <!-- TWO -->
+
+         <div class="pl-3 w-1/3 ml-3 bg-slate-100 rounded-lg ">
+          <h2 class="bg-white h-8 w-24 p-1 pl-4 mt-4 pt-2 rounded-sm text-xs font-medium">CloudSync </h2>
+          <h2  class="text pt-4 pb-3 font-semibold mb-1 text-2xl">Add Dark Mode </h2>
+          <h2 class="h-12 w-64 text-xs text-gray-500 font-normal pl-4 pt-2 rounded-sm bg-white">Debug using Chrome DevTools,check  <br>for  overlapping... </h2>
+          <!-- BUTTON -->
+          <div class="flex justify-between items-center">
+            <div class="">
+              <h2 class="font-normal mt-2 text-xs text-gray-400 pt-2">Deadline</h2>
+              <h2 class="font-medium text-sm pb-2 ">21 March 2025</h2>
+            </div>
+            <div>
+              <button class="h-8 w-24 mr-13 mt-2 bg-[#3752FD] text-white text-xs rounded-sm font-semibold btn">Completed</button>
+            </div>        
+
+          </div>
+         </div>
+         
+
+          <!-- THREE -->
+
+          <div class="pl-3 w-1/3 ml-3 mr-5 bg-slate-100 rounded-lg ">
+            <h2 class="bg-white h-8 w-24 p-1 pl-4 mt-4 pt-2 rounded-sm text-xs font-medium">SwiftPay </h2>
+            <h2  class="text pt-4 pb-3 font-semibold mb-1 text-2xl">Optimize  Home page  </h2>
+            <h2 class="h-12 w-64 text-xs text-gray-500 font-normal pl-4 pt-2 rounded-sm bg-white">Debug using Chrome DevTools,check <br>  for overlapping... </h2>
+            <!-- BUTTON -->
+            <div class="flex justify-between items-center">
+              <div class="">
+                <h2 class="font-normal mt-2 text-xs text-gray-400 pt-2">Deadline</h2>
+                <h2 class="font-medium text-sm pb-2 ">21 March 2025</h2>
+              </div>
+              <div>
+                <button class="h-8 w-24 mr-13 mt-2 bg-[#3752FD] text-white text-xs rounded-sm font-semibold btn">Completed</button>
+              </div>        
+  
+            </div>
+           </div>
+      </div>
+
+      <!-- 2ND ROW -->
+
+      <!-- Start -->
+
+       <!-- gRID -->
+
+       <div class=" h-fit mb-6 pb-4  flex justify-between items-center gap-3">
+
+        <!-- ONE -->
+         <div class="pl-3 w-1/3 ml-3 bg-slate-100 rounded-lg ">
+          <h2 class="bg-white h-8 w-24 p-1 pl-4 mt-4 pt-2 rounded-sm text-xs font-medium">Meta </h2>
+          <h2 class="text pt-4 pb-3 font-semibold mb-1 text-2xl">Add new emoji 🤲 </h2>
+          <h2 class="h-12 w-64 text-xs text-gray-500 font-normal pl-4 pt-2 rounded-sm bg-white">Debug using Chrome DevTools,check <br> for  overlapping... </h2>
+          <!-- BUTTON -->
+          <div class="flex justify-between items-center">
+            <div class="">
+              <h2 class="font-normal mt-2 text-xs text-gray-400 pt-2">Deadline</h2>
+              <h2 class="font-medium text-sm pb-2 ">21 March 2025</h2>
+            </div>
+            <div>
+              <button class="h-8 w-24 mr-13 mt-2 bg-[#3752FD] text-white text-xs rounded-sm font-semibold btn">Completed</button>
+            </div>        
+
+          </div>
+         </div>
+
+         <!-- TWO -->
+
+         <div class="pl-3 w-1/3 ml-3 bg-slate-100 rounded-lg ">
+          <h2 class="bg-white h-8 w-24 p-1 pl-4 mt-4 pt-2 rounded-sm text-xs font-medium">Google LLC </h2>
+          <h2  class="text pt-4 pb-3 font-semibold mb-1 text-2xl">Integrate OpenAI API  </h2>
+          <h2 class="h-12 w-64 text-xs text-gray-500 font-normal pl-4 pt-2 rounded-sm bg-white">Debug using Chrome DevTools,check <br>  for  overlapping... </h2>
+          <!-- BUTTON -->
+          <div class="flex justify-between items-center">
+            <div class="">
+              <h2 class="font-normal mt-2 text-xs text-gray-400 pt-2">Deadline</h2>
+              <h2 class="font-medium text-sm pb-2 ">21 March 2025</h2>
+            </div>
+            <div>
+              <button class="h-8 w-24 mr-13 mt-2 bg-[#3752FD] text-white text-xs rounded-sm font-semibold btn">Completed</button>
+            </div>        
+
+          </div>
+         </div>
+         
+
+          <!-- THREE -->
+
+          <div class="pl-3 w-1/3 ml- mr-5 bg-slate-100 rounded-lg ">
+            <h2 class="bg-white h-8 w-24 p-1 pl-4 mt-4 pt-2 rounded-sm text-xs font-medium">Glassdoar </h2>
+            <h2  class="pt-4 pb-3 font-semibold mb-1 text-2xl text">Improve Job searching  </h2>
+            <h2 class="h-12 w-64 text-xs text-gray-500 font-normal pl-4 pt-2 rounded-sm bg-white">Debug using Chrome DevTools,check <br>  for  overlapping... </h2>
+            <!-- BUTTON -->
+            <div class="flex justify-between items-center">
+              <div class="">
+                <h2 class="font-normal mt-2 text-xs text-gray-400 pt-2">Deadline</h2>
+                <h2 class="font-medium text-sm pb-2 ">21 March 2025</h2>
+              </div>
+              <div>
+                <button class="h-8 w-24 mr-13 mt-2 bg-[#3752FD] text-white text-xs rounded-sm font-semibold btn">Completed</button>
+              </div>        
+  
+            </div>
+           </div>
+      </div>
+
+      <!-- THE END -->
+      </div>
+
+       <!-- SIDE PART -->
+
+       <div id="side" class="w-64 bg-white mr-28 rounded-md">
+        <div class="flex justify-center items-center pt-4 gap-2 ml-3">
+          <img class="h-4 w-4" src="activity.png" alt="">
+          <h2 class="font-semibold">Activity Log</h2>
+        </div>
+        <button id="sideBtn" class="h-7 w-28 mt-4 ml-20 bg-[#3752FD] rounded-md text-white items-center text-sm">Clear History</button>
+        <p class="text-slate-100">-----------------------------</p>
+      </div>
+
+      
+
+
+        </div>
+    </div>
+
+   </div>
+
+  <!-- JS CONNECTION -->
+   <script src="script.js"></script>
+  </body>
+</html>
