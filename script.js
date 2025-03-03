@@ -13,6 +13,9 @@ for (let i = 0; i < button.length; i++) {
     // Last Button
     count++;
     if (count === button.length) {
+
+      alert("Board Updated Successfully");
+
       alert("congrats!!! You have completed all the current task");
       event.target.classList.add("clicked");
       event.target.disabled = true;
@@ -60,10 +63,15 @@ for (let i = 0; i < button.length; i++) {
     const text1 = text.innerText;
 
     const timeElement = document.createElement("p");
-    timeElement.innerText =  ${customMessage} ${text1} ${timeString};
+    timeElement.innerText =  `${customMessage} ${text1} ${timeString}`;
     timeElement.classList.add("time-tag");
     sideBar.appendChild(timeElement);
+
+  
   });
+
+ 
+
 }
 
 sideBtn.addEventListener("click", function () {
@@ -95,5 +103,5 @@ sideBtn.addEventListener("click", function () {
   const month = today.toLocaleString("en-US", { month: "short" });
   const date = today.getDate().toString().padStart(2, "0");
   const year = today.getFullYear();
-  document.getElementById("day").textContent = ${dayName},;
-  document.getElementById("time").textContent = ${month} ${date} ${year};
+  document.getElementById("day").textContent = `${dayName},`;
+  document.getElementById("time").textContent = `${month} ${date} ${year}`;
